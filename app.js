@@ -1,19 +1,25 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const bodyParser = require('body-parser');
+require('dotenv/config');
+
+app.use(bodyParser.json());
+
+//import toutes
+const postsRoute = require('./routes/posts');
+
+app.use('/posts', postsRoute); //middleware
 
 //ROUTES
 app.get('/', (req,res) => {
     res.send('We are on home');
 });
 
-app.get('/posts', (req,res) => {
-    res.send('We are on posts.');
-});
 
 //Connect to db
 mongoose.connect(
-    'mongodb+srv://tamrakar:IfHII6hY4gDFOYvb@cluster0.qlizhbn.mongodb.net/?retryWrites=true&w=majority',
+    process.env.DB_CONNECTION,
     { useNewUrlParser: true },
     () => { console.log('connected to DB!');}
 )
