@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//schema for the posts
 const PostSchema = mongoose.Schema({
     title: {
         type:String,
@@ -15,4 +16,5 @@ const PostSchema = mongoose.Schema({
     }
 });
 
+//exporting the schema
 module.exports = mongoose.model('Posts', PostSchema);
