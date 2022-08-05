@@ -18,3 +18,6 @@ const PostSchema = mongoose.Schema({
 
 //exporting the schema
 module.exports = mongoose.model('Posts', PostSchema);
+
+//i swear to write actual code tommroow
+//just bear this commit for now
