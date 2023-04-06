@@ -1,0 +1,29 @@
+{
+  "name": "restful-api-with-mongodb",
+  "version": "1.0.0",
+  "description": "rest api with integration with mongodb",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamrakar182/restful-api-with-mongodb.git"
+  },
+  "author": "Manjul Tamrakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamrakar182/restful-api-with-mongodb/issues"
+  },
+  "homepage": "https://github.com/Tamrakar182/restful-api-with-mongodb#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
